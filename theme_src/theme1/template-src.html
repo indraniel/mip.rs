@@ -8,12 +8,15 @@
       var initialSeed = '#{INITIALSEED}';
     </script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
   </head>
   <body>
     <div id="header"></div>
     <div id="main">
       <div class="section">#{BODY}</div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <script src="bridge.js"></script>
     <script>
       document.getElementById('header').innerHTML='<a href="'+seedUrl.substring(0, seedUrl.indexOf('.seed'))+'.html">Document URL</a>';
