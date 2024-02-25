@@ -6,7 +6,7 @@ run:
 all: test build
 
 compthemes:
-	yarn run inliner theme_src/theme1/template-src.html | tail -n +3 | head -n -1 > asset/theme1/template.html
+	yarn run inliner theme_src/theme1/template-src.html | tail -n +3 | ghead -n -1 > asset/theme1/template.html
 
 build:
 	yarn
